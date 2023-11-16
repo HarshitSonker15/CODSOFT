@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(34, 12, 12);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(81, 23, 23);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(210, 111, 111);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5 rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: red;
+        }
+
+        #element {
+            color: red;
+        }
+
+        .sectionSecond {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(159, 26, 26);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .sectionSecond h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray
+        }
+
+        .sectionSecond .box {
+            background: whitesmoke;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .sectionSecond .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: whitesmoke;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: rgb(120, 30, 30);
+            height: 133px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer ul li a:hover {
+            color: rgb(210, 111, 111);
+            font-size: 1.04rem;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(36, 11, 54, 0.8), rgba(195, 20, 50, 0.9)), url("https://i.imgur.com/3vacZxN.jpg") center no-repeat;
+            background-size: cover;
+        }
+
+        .contact-header {
+            font-family: "Montserrat", sans-serif;
+            margin: 10rem 10rem 3rem 10rem;
+            text-align: center;
+        }
+
+        #co-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #c31432;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        #co-text {
+            font-size: 3rem;
+            color: white;
+            padding-bottom: 2rem;
+        }
+
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            line-height: 2;
+            height: auto;
+            width: 70%;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 10rem;
+        }
+
+        .contact-form {
+            font-family: "Montserrat", sans-serif;
+            padding: 5rem;
+        }
+
+        #form-title {
+            color: #fff;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            line-height: 1px;
+            margin-left: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        .form-field {
+            outline: none;
+            width: 200%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+            margin-bottom: .9rem;
+        }
+
+        #name,
+        #email,
+        #subject,
+        #message {
+            font-family: "Montserrat", sans-serif;
+            color: #fff;
+            outline: none;
+            background: transparent;
+            border: none;
+            letter-spacing: 2px;
+            font-size: .6rem;
+            line-height: 2rem;
+            padding-bottom: 0.7rem;
+        }
+
+        textarea,
+        #message {
+            width: 100%;
+            color: #fff;
+            overflow: visible;
+        }
+
+        #form-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            border: none;
+            color: white;
+            font-size: 0.6rem;
+            letter-spacing: 2.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            width: 200%;
+            height: 60px;
+            background-color: #c31432;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        #form-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2.5%);
+            box-shadow: 0 0 15px 0 #000;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 5rem;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-info h3 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1rem;
+            color: #c31432;
+        }
+
+        .contact-info a {
+            font-family: "Montserrat", sans-serif;
+            text-decoration: none;
+            color: #666;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            line-height: 3rem;
+            margin-bottom: 5rem;
+            transition: all .3s ease;
+        }
+
+        .contact-info a:hover {
+            transform: translateY(-2.5%);
+            color: #999;
+        }
+
+        .contact-info .fab {
+            font-size: 1.5rem;
+            line-height: 3rem;
+            padding-left: 2rem;
+            color: #666;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        .fab:hover {
+            transform: scale(1.2);
+            color: #999;
+        }
+
+
+        @media screen and (max-width: 960px) {
+            .contact-content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-field {
+                width: 100%;
+            }
+
+            #form-btn {
+                width: 100%;
+            }
+
+            #form-title {
+                margin: 3rem auto;
+            }
+
+            .contact-header {
+                margin: 5rem 5rem 3rem 5rem;
+            }
+
+            #co-title {
+                font-size: 1rem;
+            }
+
+            #co-text {
+                font-size: 2.5rem;
+            }
+
+            .contact-form {
+                padding: 2.5rem;
+            }
+        }
+
+        @media screen and (min-width: 960px) {
+            .form-field {
+                width: 125%;
+            }
+
+            #form-title {
+                margin: 3rem auto;
+            }
+
+            #form-btn {
+                width: 125%;
+            }
+
+            .contact-header {
+                margin: 7rem 7rem 3rem 7rem;
+            }
+
+            .contact-info {
+                padding: 5rem;
+            }
+
+            #co-title {
+                font-size: 1rem;
+            }
+
+            #co-text {
+                font-size: 2.5rem;
+            }
+
+            .contact-form {
+                padding: 2.5rem;
+            }
+        }
+
+        @media screen and (min-width: 1460px) {
+            .form-field {
+                width: 200%;
+            }
+
+            #form-btn {
+                width: 200%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Harshit's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</li></a></li>
+                    <li><a href="/">Services</li></a></li>
+                    <li><a href="/">Projects</li></a></li>
+                    <li><a href="/">Contact</li></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello Everyone,
+                <div> My name is <span class="purple">Harshit</span></div>
+                <div>& I'm a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="zs.jpg" alt="">
+            </div>```
+        </section>
+        <hr>
+        <section class="sectionSecond">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Qualification</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="d.png" alt="">
+                    <div class="vertical-title">
+                        ICSE-2019
+                    </div>
+                    <div class="vertical-desc">
+                        I secured 89% marks in my ICSE class 10th examinations
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="d.png" alt="">
+                    <div class="vertical-title">
+                        ISC-2021
+                    </div>
+                    <div class="vertical-desc">
+                        I secured 92% marks in my ISC class 12th examinations from science stream
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="d.png" alt="">
+                    <div class="vertical-title">
+                        JEE-MAINS-2022
+                    </div>
+                    <div class="vertical-desc">
+                        I secured 89% percentile in the above mentioned entrance exams
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="d.png" alt="">
+                    <div class="vertical-title">
+                        JEE-ADVANCED-2022
+                    </div>
+                    <div class="vertical-desc">
+                        I was qualified for the toughest IIT Entrance Exam
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="d.png" alt="">
+                    <div class="vertical-title">
+                        B.TECH-(2022-26)
+                    </div>
+                    <div class="vertical-desc">
+                        Currently I'm pursuing my Bachelors Degree in Technology from CSE(AI-ML) branch from AJAY KUMAR
+                        GARG ENGINEERING COLLEGE and have completed 1st year with 8 CGPA
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-header">
+                <h3 id="co-title">Contact Me</h3>
+                <h1 id="co-text">Reach out for a new project or to say hello</h1>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3 id="form-title">Send me a message</h3>
+                    <form action="mailto:npeel3497@gmail.com" method="post" enctype="text/plain">
+                        <fieldset>
+                            <div class="form-field">
+                                <input name="name" type="text" id="name" placeholder="Your Name"></input>
+                            </div>
+                            <div class="form-field">
+                                <input name="email" type="email" id="email" placeholder="Your Email"></input>
+                            </div>
+                            <div class="form-field">
+                                <input name="Subject" type="text" id="subject" placeholder="Subject"></input>
+                            </div>
+                            <div class="form-field">
+                                <textarea name="message" type="text" id="message" placeholder="Your Message"></textarea>
+                            </div>
+                        </fieldset>
+                        <input id="form-btn" type="submit" value="send">
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Email Me At </h3>
+                    <a href="mailto:harshitsonker15@gmail.com">
+                        <p>harshitsonker15@gmail.com</p>
+                    </a>
+                    <h3>Find Me On </h3>
+                    <div class="contact-links">
+                        <a><i class="fab fa-linkedin"></i></a>
+                        <a><i class="fab fa-github"></i></a>
+                        <a><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Harshit's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="/">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="/">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-fivth">
+                <ul>
+                    <li><a href="/">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-sixth">
+                <ul>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'C Programmer', 'UI/UX Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
